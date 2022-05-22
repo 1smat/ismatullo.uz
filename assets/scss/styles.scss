@@ -147,7 +147,6 @@ img {
 
     &:hover {
       position: relative;
-      
 
       &::after {
         position: absolute;
@@ -231,7 +230,6 @@ img {
   }
   &__blob {
     fill: $second-color;
-
   }
 }
 
@@ -250,7 +248,6 @@ img {
     box-shadow: 0px 10px 36px rgba(0, 0, 0, 0.15);
     color: $first-color;
     background-color: $second-color;
-
   }
 }
 
@@ -381,17 +378,30 @@ img {
   font-weight: $font-semi;
   padding: 2rem 0;
 
+  &__icon {
+    margin: 0 $mb-2;
+    width: max-content;
+    display: flex;
+    align-items: center;
+    font-size: 2.5rem;
+    border-radius: 50%;
+    padding: 10px;
+    color: $first-color;
+    background-color: $second-color;
+    &:hover {
+      color: $second-color;
+      background-color: $first-color;
+    }
+  }
+
   &__title {
     font-size: 2rem;
     margin-bottom: $mb-4;
   }
   &__social {
+    display: flex;
+    justify-content: center;
     margin-bottom: $mb-4;
-  }
-  &__icon {
-    font-size: 1.5rem;
-    color: #fff;
-    margin: 0 $mb-2;
   }
   &__copy {
     font-size: $smaller-font-size;

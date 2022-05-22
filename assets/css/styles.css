@@ -335,17 +335,29 @@ img {
   font-weight: 600;
   padding: 2rem 0;
 }
+.footer__icon {
+  margin: 0 1rem;
+  width: max-content;
+  display: flex;
+  align-items: center;
+  font-size: 2.5rem;
+  border-radius: 50%;
+  padding: 10px;
+  color: hsl(100deg, 89%, 100%);
+  background-color: hsl(100deg, 56%, 1%);
+}
+.footer__icon:hover {
+  color: hsl(100deg, 56%, 1%);
+  background-color: hsl(100deg, 89%, 100%);
+}
 .footer__title {
   font-size: 2rem;
   margin-bottom: 2rem;
 }
 .footer__social {
+  display: flex;
+  justify-content: center;
   margin-bottom: 2rem;
-}
-.footer__icon {
-  font-size: 1.5rem;
-  color: #fff;
-  margin: 0 1rem;
 }
 .footer__copy {
   font-size: 0.75rem;
