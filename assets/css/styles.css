@@ -196,10 +196,11 @@ img {
   position: absolute;
   right: 0;
   bottom: 0;
-  width: 550px;
+  width: 400px;
 }
 .home__blob {
   fill: hsl(100deg, 56%, 1%);
+  fill: red;
 }
 
 /*BUTTONS*/
@@ -388,7 +389,7 @@ img {
   }
   .home__img {
     width: 300px;
-    bottom: 25%;
+    bottom: 40%;
   }
 
   .about__container {
@@ -457,15 +458,16 @@ img {
     padding: 8rem 0 2rem;
   }
   .home__img {
-    width: 400px;
-    bottom: 10%;
+    width: 450px;
+    bottom: 22%;
   }
 
   .about__container {
     padding-top: 2rem;
   }
-  .about__img img {
-    width: 300px;
+  .about__img {
+    width: 400px;
+    bottom: 50%;
   }
 
   .skills__container {
@@ -491,6 +493,7 @@ img {
   }
   .home__img {
     width: 550px;
+    top: 15%;
   }
 }
 

@@ -226,12 +226,15 @@ img {
     position: absolute;
     right: 0;
     bottom: 0;
-    width: 550px;
+    width: 400px;
   }
   &__blob {
     fill: $second-color;
+    fill: red;
+
   }
 }
+
 
 /*BUTTONS*/
 .button {
@@ -416,6 +419,7 @@ img {
     &__img {
       width: 200px;
     }
+
   }
 }
 
@@ -435,7 +439,7 @@ img {
     }
     &__img {
       width: 300px;
-      bottom: 25%;
+      bottom: 40%;
     }
   }
 
@@ -507,8 +511,8 @@ img {
     padding: 8rem 0 2rem;
 
     &__img {
-      width: 400px;
-      bottom: 10%;
+      width: 450px;
+      bottom: 22%;
     }
   }
 
@@ -516,10 +520,9 @@ img {
     &__container {
       padding-top: 2rem;
     }
-    &__img {
-      & img {
-        width: 300px;
-      }
+    &__img {  
+      width: 400px;
+      bottom: 50%;
     }
   }
   .skills__container {
@@ -544,6 +547,7 @@ img {
 
     &__img {
       width: 550px;
+      top: 15%;
     }
   }
 }
