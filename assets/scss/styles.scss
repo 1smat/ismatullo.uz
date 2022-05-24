@@ -230,11 +230,8 @@ img {
   }
   &__blob {
     fill: $second-color;
-    fill: red;
-
   }
 }
-
 
 /*BUTTONS*/
 .button {
@@ -414,32 +411,70 @@ img {
 /* ===== MEDIA QUERIES=====*/
 @media screen and (max-width: 320px) {
   .home {
-    row-gap: 2rem;
-
+    &__title {
+      font-size: $big-font-size - 1.5rem;
+      text-align: center;
+    }
+    // row-gap: 2rem;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
     &__img {
-      width: 200px;
+      position: relative;
+      right: 30px;
+      width: 350px;
     }
 
+    &__social {
+      display: flex;
+      flex-direction: row;
+      // display: none;
+    }
+  }
+}
+@media screen and (max-width: 576px) {
+  .home {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+    &__title {
+      font-size: $big-font-size - 1rem;
+    }
+
+    &__img {
+      position: relative;
+      right: 30px;
+      width: 400px;
+    }
+    &__social {
+      display: flex;
+      flex-direction: row;
+    }
   }
 }
 
 @media screen and (min-width: 576px) {
   .home {
     padding: 4rem 0 2rem;
+
+    &__title {
+      font-size: $big-font-size - 1rem;
+    }
     &__social {
       padding-top: 0;
       padding-bottom: 2.5rem;
       flex-direction: row;
-      align-self: flex-end;
-
+      justify-content: center;
       &-icon {
         margin-bottom: 0;
         margin-right: $mb-4;
       }
     }
     &__img {
-      width: 300px;
-      bottom: 40%;
+      width: 350px;
+      bottom: 33%;
     }
   }
 
@@ -509,10 +544,12 @@ img {
   }
   .home {
     padding: 8rem 0 2rem;
-
+    &__social {
+      justify-content: flex-start;
+    }
     &__img {
-      width: 450px;
-      bottom: 22%;
+      width: 350px;
+      top: 15%;
     }
   }
 
@@ -520,8 +557,8 @@ img {
     &__container {
       padding-top: 2rem;
     }
-    &__img {  
-      width: 400px;
+    &__img {
+      width: 350px;
       bottom: 50%;
     }
   }
@@ -546,7 +583,8 @@ img {
     padding: 10rem 0 2rem;
 
     &__img {
-      width: 550px;
+      // width: 100%;
+      width: 500px;
       top: 15%;
     }
   }
